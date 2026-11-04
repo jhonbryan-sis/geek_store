@@ -11,8 +11,10 @@ namespace geek_store
         public string Tipo { get; set; }
         public string Talla { get; set; }
 
-        public Merchandising(string nombre, double precioVenta, string tipo, string talla)
+        public Merchandising(int id, string nombre, double precioVenta, string tipo, string talla, double precioCosto,int stock)
+            :base (id, nombre, precioVenta, precioCosto,stock)
         {
+            ID = id;
             Nombre = nombre;
             PrecioVenta = precioVenta;
             Tipo = tipo;

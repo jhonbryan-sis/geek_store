@@ -12,8 +12,10 @@ namespace geek_store
         public int Volumen { get; set; }
         public bool EsVariante { get; set; }
 
-        public Comic(string nombre, double precioVenta, int volumen, bool esVariante)
+        public Comic(int id, string nombre, double precioVenta, int volumen, bool esVariante, double precioCosto , int stock )
+            :base (id, nombre, precioVenta, precioCosto, stock )
         {
+            ID = id;
             Nombre = nombre;
             PrecioVenta = precioVenta;
             Volumen = volumen;

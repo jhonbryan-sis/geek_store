@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace geek_store
 {
-    internal abstract class ArticuloTienda
+    public abstract class ArticuloTienda
     {
         public int ID { get; set; }
         public string Nombre { get; set; }
